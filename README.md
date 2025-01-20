@@ -1,31 +1,64 @@
-# Teste Econverse: Vaga Desenvolvedor Front-End
+# Teste Front-End Junior
 
-### Vem ser #Econverse!
+## Pré-requisitos
 
-Segue abaixo as instruções para a execução do teste.
+Antes de começar, certifique-se de ter as seguintes ferramentas instaladas no seu sistema:
 
-## Instruções
-- Faça um fork desse projeto para a sua conta pessoal do GitHub.
-- Desenvolva a página conforme as **Especificações Técnicas** 
-- Crie um README com as instruções para compilar, testar e rodar o projeto.
-- O link do repositório deverá ser enviado para o e-mail ana.nascimento@econverse.com.br, joao.victor@econverse.com.br e eduardo.rodrigues@econverse.com.br com o título **Teste Vaga FrontEnd Jr**
+- [Node.js](https://nodejs.org/en)
+- [Yarn](https://classic.yarnpkg.com/en/docs/install/#windows-stable)
 
-## Especificações Técnicas
-- Desenvolver a pagina em React e TypeScript conforme o [layout](https://www.figma.com/file/rWnzPeoxgynuNPsJjV0VmV/Teste-Front-End-Jr?node-id=0%3A1). Para conseguir pegar os elementos do Figma, basta copiar o layout para sua conta que terá acesso de edição.
-- Montar a [vitrine](https://app.econverse.com.br/teste-front-end/junior/tecnologia/layout/vitrine-produtos.png) de produtos consumindo as informações dos produtos em json atraves desse [Link](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json).
-- Desenvolver a interação ao clicar em um produto conforme layout. A interação consiste em abrir um modal com as principais informações do produto presente no arquivo [JSON](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json) conforme o produto que clicar.
-- Utilizar Pré-processador Sass, Less ou Stylus.
-- Respeitar o Layout pixel a pixel, tamanho das fontes, cores e botões.
-- Não Utilizar bibliotecas UI como Bootstrap, Foundation, ou afins.
+Você pode instalar o Yarn globalmente usando o npm após instalar o Node.js com o comando:
 
-## Pontos Extras
-- Utilizar Boas práticas de SEO
-- Uso de HTML semântico
+```bash
+npm install --global yarn
+```
 
-## O que avaliaremos em seu teste
-- Organização do projeto
-- Lógica do código
-- Componentização
-- Alcance dos objetivos propostos
+## Baixando o Projeto
 
-**Boa sorte! ;)**
+Clique no botão "Code" acima e selecione "Download ZIP". Após o download, descompacte o arquivo em uma pasta no seu computador.
+
+## Rodando o Projeto (ambiente de desenvolvimento)
+
+1. **Instale as dependências:**
+
+   Abra o terminal na pasta do projeto descompactado e execute:
+
+   ```bash
+   yarn
+   ```
+
+2. **Inicie o servidor:**
+
+   Após a instalação das dependências, inicie o servidor de desenvolvimento com o comando:
+
+   ```bash
+   yarn dev
+   ```
+
+   Você verá uma mensagem no terminal informando o endereço local onde o projeto está rodando, como por exemplo `http://localhost:3000`.
+
+## Compilando o Projeto (build)
+
+Para criar uma versão de produção do projeto, siga os passos abaixo:
+
+1. **Compile o projeto:**
+
+   Execute o comando:
+
+   ```bash
+   yarn build
+   ```
+
+   Isso gerará uma pasta `dist` na raiz do diretório do projeto com os arquivos compilados.
+
+2. **Visualize o projeto compilado:**
+
+   Para visualizar o projeto compilado, use o comando:
+
+   ```bash
+   yarn preview
+   ```
+
+   Este comando irá iniciar um servidor que serve os arquivos da pasta `dist`.
+
+**Nota:** O projeto compilado não irá obter os dados da API. Mais detalhes estão no arquivo `vite.config.ts`.
